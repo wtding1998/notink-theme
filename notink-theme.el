@@ -26,7 +26,7 @@
 ;; Colors
 (let* ((color-fg "#4c5256")
        (color-bg "#c4cdd3")
-       (color-bright "#ffffff")
+       (color-bright "#eeeeee")
        (color-black "#35393b")
        (color-dark "#616b72")
        (color-middle "#83919a")
@@ -36,6 +36,9 @@
    'notink
    `(default ((t (:background ,color-bg
                   :foreground ,color-fg))))
+   `(italic ((t (:background ,color-bg
+                 :foreground ,color-fg
+                 :slant italic))))
    `(cursor ((t (:background ,color-fg
                  :foreground ,color-bg))))
    `(region ((t (:background ,color-fg
@@ -212,10 +215,25 @@
    `(helm-buffer-size ((t (:foreground ,color-middle))))
    `(helm-match ((t (:inherit italic))))
 
+   `(error ((t (:foreground ,color-bright))))
+   ;; ivy
+   `(ivy-minibuffer-match-face-1 ((t (:inherit italic :background ,color-bright))))
+   `(ivy-minibuffer-match-face-2 ((t (:inherit italic :background ,color-bright))))
+   `(ivy-minibuffer-match-face-3 ((t (:inherit italic :background ,color-bright))))
+   `(ivy-minibuffer-match-face-4 ((t (:inherit italic :background ,color-bright))))
+   `(ivy-current-match ((t (:inherit region :distant-foreground nil
+                            :background nil))))
+
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,color-dark))))
    `(font-latex-math-face ((t (:inherit default))))
    `(font-latex-script-char-face ((t (:inherit font-latex-math-face))))
+   `(font-latex-warning-face ((t (:foreground ,color-middle))))
+   `(font-latex-sectioning-0-face ((t (:weight bold :underline t :height 1.2))))
+   `(font-latex-sectioning-1-face ((t (:weight bold :underline t :height 1.2))))
+   `(font-latex-sectioning-2-face ((t (:weight bold :underline t :height 1.2))))
+   `(font-latex-sectioning-3-face ((t (:weight bold :underline t :height 1.2))))
+   `(font-latex-sectioning-4-face ((t (:weight bold :underline t :height 1.2))))
 
    ;; adoc-mode
    `(markup-meta-hide-face ((t (:height 1.0 :foreground ,color-middle))))
