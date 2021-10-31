@@ -21,7 +21,7 @@
 
 ;;; Code:
 
-(deftheme notink "A custom theme inspired by e-ink displays")
+(deftheme notink "A custom theme inspired by e-ink displays.")
 
 ;; Colors
 (let* ((color-fg "#4c5256")
@@ -272,7 +272,8 @@
    `(org-code ((t (:foreground ,color-dark))))
    `(org-date ((t (:foreground ,color-middle))))
    `(org-done ((t (:weight normal :foreground ,color-middle))))
-   `(org-todo ((t (:weight normal :foreground nil :background ,color-bright))))
+   ;; `(org-todo ((t (:weight normal :foreground nil :background ,color-bright))))
+   `(org-todo ((t (:weight bold :foreground ,color-dark))))
    `(org-latex-and-related ((t (:foreground ,color-dark :italic t))))
    `(org-checkbox ((t (:weight normal :foreground ,color-middle))))
    `(org-verbatim ((t (:foreground ,color-dark))))
