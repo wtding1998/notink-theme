@@ -336,6 +336,9 @@
      ((t (:underline nil :background ,color-bright))))
    `(lsp-headerline-breadcrumb-separator-face ((t (:foreground ,color-fg))))
 
+   ;; bookmark
+   `(bookmark-face ((t (:inherit default))))
+
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
    `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
