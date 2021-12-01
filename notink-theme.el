@@ -339,6 +339,9 @@
    ;; bookmark
    `(bookmark-face ((t (:inherit default))))
 
+   ;; line-number
+   `(line-number-current-line ((t (:inherit hl-line))))
+
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
    `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
