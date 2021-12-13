@@ -274,7 +274,8 @@
    `(org-code ((t (:foreground ,color-dark))))
    `(org-date ((t (:foreground ,color-middle))))
    `(org-done ((t (:weight normal :foreground ,color-middle))))
-   `(org-todo ((t (:weight normal :foreground nil :background ,color-bright))))
+   ;; `(org-todo ((t (:weight normal :foreground nil :background ,color-bright))))
+   `(org-todo ((t (:weight bold :foreground ,color-dark))))
    `(org-latex-and-related ((t (:foreground ,color-dark :italic t))))
    `(org-checkbox ((t (:weight normal :foreground ,color-middle))))
    `(org-verbatim ((t (:foreground ,color-dark))))
@@ -336,6 +337,12 @@
    `(lsp-headerline-breadcrumb-path-error-face
      ((t (:underline nil :background ,color-bright))))
    `(lsp-headerline-breadcrumb-separator-face ((t (:foreground ,color-fg))))
+
+   ;; bookmark
+   `(bookmark-face ((t (:inherit default))))
+
+   ;; line-number
+   `(line-number-current-line ((t (:inherit hl-line))))
 
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
