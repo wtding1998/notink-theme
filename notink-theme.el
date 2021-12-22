@@ -43,11 +43,11 @@
                  :foreground ,color-bg))))
    `(region ((t (:background ,color-fg
                  :foreground ,color-bg))))
-   `(mode-line ((t (:background ,color-dark
+   `(mode-line ((t (:background ,color-fg
                     :foreground ,color-bg
                     :box nil))))
    `(mode-line-buffer-id ((t (:foreground ,color-bg))))
-   `(mode-line-inactive ((t (:background ,color-fg
+   `(mode-line-inactive ((t (:background ,color-dark
                              :foreground ,color-bg))))
    `(fringe ((t (:background ,color-bg))))
    `(minibuffer-prompt ((t (:inherit italic :foreground ,color-dark))))
