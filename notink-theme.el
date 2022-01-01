@@ -88,6 +88,21 @@
    `(dired-symlink ((t (:foreground ,color-middle))))
    `(dired-perm-write ((t (:background ,color-bright))))
 
+   ;; Diredfl
+   `(diredfl-flag-mark-line ((t (:inherit region))))
+   `(diredfl-dir-heading ((t (:inherit hl-line))))
+   `(diredfl-dir-name ((t (:inherit hl-line))))
+   `(diredfl-file-name ((t (:inherit default))))
+   `(diredfl-date-time ((t (:inherit default))))
+   `(diredfl-number ((t (:inherit default))))
+   `(diredfl-file-suffix ((t (:inherit default))))
+   `(diredfl-read-priv ((t (:inherit default))))
+   `(diredfl-dir-priv ((t (:inherit default))))
+   `(diredfl-exec-priv ((t (:inherit default))))
+   `(diredfl-link-priv ((t (:inherit default))))
+   `(diredfl-no-priv ((t (:inherit default))))
+   `(diredfl-write-priv ((t (:inherit default))))
+
    ;; Diff
    `(diff-added ((t (:foreground unspecified :background ,color-bright))))
    `(diff-removed ((t (:foreground ,color-bg :background ,color-dark))))
