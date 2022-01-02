@@ -352,7 +352,7 @@
    `(lsp-headerline-breadcrumb-separator-face ((t (:foreground ,color-fg))))
 
    ;; bookmark
-   `(bookmark-face ((t (:inherit default))))
+   `(bookmark-face ((t (:foreground ,color-middle))))
 
    ;; line-number
    `(line-number-current-line ((t (:inherit hl-line))))
