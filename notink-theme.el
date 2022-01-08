@@ -90,7 +90,7 @@
 
    ;; Diredfl
    `(diredfl-flag-mark-line ((t (:inherit region))))
-   `(diredfl-dir-heading ((t (:inherit hl-line))))
+   `(diredfl-dir-heading ((t (:inherit default :bold t))))
    `(diredfl-dir-name ((t (:inherit hl-line))))
    `(diredfl-file-name ((t (:inherit default))))
    `(diredfl-compressed-file-name ((t (:inherit default))))
