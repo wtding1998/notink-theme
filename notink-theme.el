@@ -43,7 +43,7 @@
                  :slant italic))))
    `(cursor ((t (:background ,color-fg
                  :foreground ,color-bg))))
-   `(region ((t (:background ,color-fg
+   `(region ((t (:background ,color-dark
                  :foreground ,color-bg))))
    `(mode-line ((t (:background ,color-fg
                     :foreground ,color-bg
@@ -241,8 +241,8 @@
    `(ivy-minibuffer-match-face-2 ((t (:inherit italic :background ,color-bright))))
    `(ivy-minibuffer-match-face-3 ((t (:inherit italic :background ,color-bright))))
    `(ivy-minibuffer-match-face-4 ((t (:inherit italic :background ,color-bright))))
-   `(ivy-current-match ((t (:inherit region :distant-foreground nil
-                            :background nil))))
+   `(ivy-current-match ((t (:foreground ,color-bg :distant-foreground nil
+                            :background ,color-fg))))
 
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,color-dark))))
