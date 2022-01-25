@@ -45,11 +45,11 @@
                  :foreground ,color-bg))))
    `(region ((t (:background ,color-fg
                  :foreground ,color-bg))))
-   `(mode-line ((t (:background ,color-dark
+   `(mode-line ((t (:background ,color-fg
                     :foreground ,color-bg
                     :box nil))))
    `(mode-line-buffer-id ((t (:foreground ,color-bg))))
-   `(mode-line-inactive ((t (:background ,color-fg
+   `(mode-line-inactive ((t (:background ,color-dark
                              :foreground ,color-bg))))
    `(fringe ((t (:background ,color-bg))))
    `(minibuffer-prompt ((t (:inherit italic :foreground ,color-dark))))
@@ -89,6 +89,24 @@
    `(dired-directory ((t (:foreground ,color-dark))))
    `(dired-symlink ((t (:foreground ,color-middle))))
    `(dired-perm-write ((t (:background ,color-bright))))
+
+   ;; Diredfl
+   `(diredfl-flag-mark-line ((t (:inherit region))))
+   `(diredfl-dir-heading ((t (:inherit default :bold t))))
+   `(diredfl-dir-name ((t (:inherit hl-line))))
+   `(diredfl-file-name ((t (:inherit default))))
+   `(diredfl-compressed-file-name ((t (:inherit default))))
+   `(diredfl-date-time ((t (:inherit default))))
+   `(diredfl-number ((t (:inherit default))))
+   `(diredfl-file-suffix ((t (:inherit default :foreground ,color-middle))))
+   `(diredfl-ignored-file-name ((t (:inherit diredfl-file-suffix))))
+   `(diredfl-compressed-file-suffix ((t (:inherit diredfl-file-suffix))))
+   `(diredfl-read-priv ((t (:inherit default))))
+   `(diredfl-dir-priv ((t (:inherit default))))
+   `(diredfl-exec-priv ((t (:inherit default))))
+   `(diredfl-link-priv ((t (:inherit default))))
+   `(diredfl-no-priv ((t (:inherit default))))
+   `(diredfl-write-priv ((t (:inherit default))))
 
    ;; Diff
    `(diff-added ((t (:foreground unspecified :background ,color-bright))))
@@ -339,7 +357,7 @@
    `(lsp-headerline-breadcrumb-separator-face ((t (:foreground ,color-fg))))
 
    ;; bookmark
-   `(bookmark-face ((t (:inherit default))))
+   `(bookmark-face ((t (:foreground ,color-middle))))
 
    ;; line-number
    `(line-number-current-line ((t (:inherit hl-line))))
