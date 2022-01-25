@@ -27,7 +27,7 @@
 (let* ((color-fg "#4c5256")
        (color-bg "#c4cdd3")
        (color-red "#cc725b")
-       (colot-total-black "#000000")
+       (color-total-black "#000000")
        (color-bright "#eeeeee")
        (color-black "#35393b")
        (color-dark "#616b72")
@@ -235,7 +235,7 @@
    `(helm-buffer-size ((t (:foreground ,color-middle))))
    `(helm-match ((t (:inherit italic))))
 
-   `(error ((t (:foreground ,color-total-black))))
+   `(error ((t (:foreground ,color-bright))))
    ;; ivy
    `(ivy-minibuffer-match-face-1 ((t (:inherit italic :background ,color-bright))))
    `(ivy-minibuffer-match-face-2 ((t (:inherit italic :background ,color-bright))))
