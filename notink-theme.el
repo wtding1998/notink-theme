@@ -246,7 +246,7 @@
 
    ;; TeX
    `(font-latex-sedate-face ((t (:foreground ,color-dark))))
-   `(font-latex-math-face ((t (:inherit default))))
+   `(font-latex-math-face ((t (:inherit default :italic t :foreground ,color-dark))))
    `(font-latex-script-char-face ((t (:inherit font-latex-math-face))))
    `(font-latex-warning-face ((t (:foreground ,color-middle))))
    `(font-latex-sectioning-0-face ((t (:weight bold :underline t :height 1.2))))
@@ -254,6 +254,7 @@
    `(font-latex-sectioning-2-face ((t (:weight bold :underline t :height 1.2))))
    `(font-latex-sectioning-3-face ((t (:weight bold :underline t :height 1.2))))
    `(font-latex-sectioning-4-face ((t (:weight bold :underline t :height 1.2))))
+   `(font-latex-verbatim-face ((t (:inherit default :foreground ,color-dark))))
 
    ;; adoc-mode
    `(markup-meta-hide-face ((t (:height 1.0 :foreground ,color-middle))))
@@ -309,6 +310,10 @@
    `(org-tree-slide-header-overlay-face
      ((t (:inherit font-lock-comment-face :foreground nil :background nil))))
 
+   ;; org-clock
+   `(org-mode-line-clock-overrun ((t (:inherit error))))
+   `(org-agenda-clocking ((t (:inherit error))))
+
    ;; Message
    `(message-header-name ((t (:foreground ,color-dark))))
    `(message-header-other ((t (:foreground ,color-middle))))
@@ -361,6 +366,14 @@
 
    ;; line-number
    `(line-number-current-line ((t (:inherit hl-line))))
+
+   ;; rime
+   '(rime-indicator-dim-face ((t (:inherit error :foreground nil))))
+   '(rime-indicator-face ((t (:inherit mode-line :foreground nil))))
+   '(rime-default-face ((t (:inherit mode-line))))
+   '(rime-highlight-candidate-face ((t (:inherit rime-default-face :foreground ,color-bright :background nil))))
+   '(rime-code-face ((t (:inherit rime-default-face))))
+   '(rime-candidate-num-face ((t (:inherit rime-default-face))))
 
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
