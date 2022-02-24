@@ -311,8 +311,12 @@
      ((t (:inherit font-lock-comment-face :foreground nil :background nil))))
 
    ;; org-clock
-   `(org-mode-line-clock-overrun ((t (:inherit error))))
-   `(org-agenda-clocking ((t (:inherit error))))
+   `(org-mode-line-clock-overrun ((t (:inherit mode-line :foreground ,color-bright))))
+   `(org-agenda-clocking ((t (:inherit default :foreground ,color-bright))))
+
+   `(org-pomodoro-mode-line-overtime ((t (:inherit mode-line))))
+   `(org-pomodoro-mode-line-break ((t (:inherit mode-line :foreground ,color-bright))))
+   `(org-pomodoro-mode-line ((t (:inherit mode-line))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,color-dark))))
