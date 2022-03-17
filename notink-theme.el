@@ -34,6 +34,8 @@
        (color-middle "#83919a")
        (color-light "#a9b5bd"))
 
+  (setq evil-visual-state-cursor '(hollow "#eeeeee"))
+
   (custom-theme-set-faces
    'notink
    `(default ((t (:background ,color-bg
@@ -372,12 +374,15 @@
    `(line-number-current-line ((t (:inherit hl-line))))
 
    ;; rime
-   '(rime-indicator-dim-face ((t (:inherit error :foreground nil))))
-   '(rime-indicator-face ((t (:inherit mode-line :foreground nil))))
-   '(rime-default-face ((t (:inherit mode-line))))
-   '(rime-highlight-candidate-face ((t (:inherit rime-default-face :foreground ,color-bright :background nil))))
-   '(rime-code-face ((t (:inherit rime-default-face))))
-   '(rime-candidate-num-face ((t (:inherit rime-default-face))))
+   ;; '(rime-indicator-dim-face ((t (:inherit error :foreground nil))))
+   ;; '(rime-indicator-face ((t (:inherit mode-line :foreground nil))))
+   ;; '(rime-default-face ((t (:inherit mode-line))))
+   ;; '(rime-highlight-candidate-face ((t (:inherit rime-default-face :foreground ,color-bright :background nil))))
+   ;; '(rime-code-face ((t (:inherit rime-default-face))))
+   ;; '(rime-candidate-num-face ((t (:inherit rime-default-face))))
+
+   ;; evil-snipe
+   `(evil-snipe-matches-face ((t (:inherit evil-ex-lazy-highlight))))
 
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
