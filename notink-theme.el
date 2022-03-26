@@ -384,6 +384,14 @@
    ;; evil-snipe
    `(evil-snipe-matches-face ((t (:inherit evil-ex-lazy-highlight))))
 
+   ;; netease-music
+   `(netease-cloud-music-repeat-mode-face ((t (:inherit default))))
+   `(netease-cloud-music-repeat-face ((t (:inherit default))))
+   `(netease-cloud-music-playing-song-face ((t (:inherit default :underline t))))
+   `(netease-cloud-music-playlist-face ((t (:inherit default :bold t))))
+   `(netease-cloud-music-playlists-face ((t (:inherit default))))
+   `(netease-cloud-music-current-song-title-face ((t (:inherit default))))
+
    ;; Flymake
    `(flymake-error ((t (:underline (:style wave :color ,color-bright)))))
    `(flymake-warning ((t (:underline (:style wave :color ,color-middle)))))
