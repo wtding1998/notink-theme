@@ -76,7 +76,7 @@
    `(button ((t (:background ,color-bright :underline t :foreground nil))))
    `(header-line ((t (:background ,color-light :foreground ,color-fg))))
    `(shadow ((t (:foreground ,color-middle))))
-   `(show-paren-match ((t (:background ,color-dark :foreground ,color-bg))))
+   `(show-paren-match ((t (:background ,color-bright :foreground ,color-fg))))
    `(show-paren-mismatch ((t (:background ,color-bright
                               :foreground ,color-fg))))
    `(highlight ((t (:inverse-video nil :background ,color-bright))))
