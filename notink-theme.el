@@ -32,6 +32,7 @@
        (color-black "#35393b")
        (color-dark "#616b72")
        (color-middle "#83919a")
+       (color-middle-light "#a0abb3")
        (color-light "#a9b5bd"))
 
   (custom-theme-set-faces
@@ -41,10 +42,10 @@
    `(italic ((t (:background ,color-bg
                  :foreground ,color-fg
                  :slant italic))))
-   `(cursor ((t (:background ,color-fg
-                 :foreground ,color-bg))))
-   `(region ((t (:background ,color-dark
-                 :foreground ,color-bg))))
+   `(cursor ((t (:background ,color-dark
+                 :foreground ,color-fg))))
+   `(region ((t (:background ,color-middle-light
+                 :foreground ,color-fg))))
    `(mode-line ((t (:background ,color-fg
                     :foreground ,color-bg
                     :box nil))))
