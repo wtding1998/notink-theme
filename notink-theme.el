@@ -34,8 +34,6 @@
        (color-middle "#83919a")
        (color-light "#a9b5bd"))
 
-  (setq evil-visual-state-cursor '(hollow "#eeeeee"))
-
   (custom-theme-set-faces
    'notink
    `(default ((t (:background ,color-bg
